@@ -1,0 +1,1017 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/May/2022 23:13:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\main\views.py", line 12, in main_page
+    return render_template("index.html")
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 90, in _get_source_fast
+    for _srcobj, loader in self._iter_loaders(template):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 105, in _iter_loaders
+    loader = blueprint.jinja_loader
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\helpers.py", line 752, in __get__
+    return super().__get__(obj, type=type)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\scaffold.py", line 341, in jinja_loader
+    return FileSystemLoader(os.path.join(self.root_path, self.template_folder))
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\ntpath.py", line 117, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'module'
+INFO:werkzeug:127.0.0.1 - - [11/May/2022 23:13:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\main\views.py", line 12, in main_page
+    return render_template("index.html")
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 90, in _get_source_fast
+    for _srcobj, loader in self._iter_loaders(template):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 105, in _iter_loaders
+    loader = blueprint.jinja_loader
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\helpers.py", line 752, in __get__
+    return super().__get__(obj, type=type)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\scaffold.py", line 341, in jinja_loader
+    return FileSystemLoader(os.path.join(self.root_path, self.template_folder))
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\ntpath.py", line 117, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'module'
+INFO:werkzeug:127.0.0.1 - - [11/May/2022 23:13:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\main\views.py", line 12, in main_page
+    return render_template("index.html")
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 90, in _get_source_fast
+    for _srcobj, loader in self._iter_loaders(template):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 105, in _iter_loaders
+    loader = blueprint.jinja_loader
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\helpers.py", line 752, in __get__
+    return super().__get__(obj, type=type)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\scaffold.py", line 341, in jinja_loader
+    return FileSystemLoader(os.path.join(self.root_path, self.template_folder))
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\ntpath.py", line 117, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'module'
+INFO:werkzeug:127.0.0.1 - - [11/May/2022 23:16:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\main\views.py", line 12, in main_page
+    return render_template("index.html")
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 90, in _get_source_fast
+    for _srcobj, loader in self._iter_loaders(template):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 105, in _iter_loaders
+    loader = blueprint.jinja_loader
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\helpers.py", line 752, in __get__
+    return super().__get__(obj, type=type)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\scaffold.py", line 341, in jinja_loader
+    return FileSystemLoader(os.path.join(self.root_path, self.template_folder))
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\ntpath.py", line 117, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'module'
+INFO:werkzeug:127.0.0.1 - - [11/May/2022 23:16:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [11/May/2022 23:22:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/May/2022 23:22:06] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:33:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:33:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:35:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:35:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:35:09] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:36:41] "[33mGET /searh?s=s HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:37:00] "[33mGET /searh?s=s HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:37:09] "[33mGET /searh?s=s HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:37:19] "[33mGET /searh?s=Ага HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:37:36] "[33mGET /searh?s=Ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:42:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:42:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:42:26] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:44:00] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:44:36] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:44:54] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:45:10] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:45:15] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:root:Выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\main\views.py", line 20, in search_page
+    posts = load_json_data("../posts.json")
+  File "C:\Users\1\PycharmProjects\12HW\12hw\main\utils.py", line 5, in load_json_data
+    with open(path, "r", encoding="UTF-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '../posts.json'
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:45:48] "[35m[1mGET /search?s=поищи HTTP/1.1[0m" 500 -
+INFO:root:Выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\main\views.py", line 20, in search_page
+    posts = load_json_data("../posts.json")
+  File "C:\Users\1\PycharmProjects\12HW\12hw\main\utils.py", line 5, in load_json_data
+    with open(path, "r", encoding="UTF-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '../posts.json'
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:45:57] "[35m[1mGET /search?s=Ага HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:46:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:46:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:47:41] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:47:45] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:53:56] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:54:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:54:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:54:05] "[33mGET /searh?s=fuf HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:58:02] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:59:04] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:59:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:59:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 00:59:18] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:07:17] "[33mGET /searh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:07:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:07:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:07:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:07:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:07:36] "[33mGET /searh?s=утро HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:09:19] "[33mGET /searh?s=утро HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:09:23] "[33mGET /searh?s=утро HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:09:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:09:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:09:33] "[33mGET /searсh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:10:24] "[33mGET /searсh?s=ага HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:10:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:10:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:10:31] "[33mPOST /searсh HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:16:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:16:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:17:15] "GET /search?s=поищи HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:17:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:17:28] "GET /search?s=Ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:17:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:17:59] "[33mGET /searсh?s=Ага HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:18:29] "[33mGET /searсh?s=Ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:19:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:19:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:19:26] "[33mGET /searсh?s=Ага HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:19:30] "[33mGET /post HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:24:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:24:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:24:11] "[33mGET /searсh?s=Ага HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:24:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:24:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:24:20] "[33mGET /searсh?s=ваырмут HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:24:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:24:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:17] "GET /search?s=Ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:39] "GET /search?s=поищи HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:53] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:25:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:26:03] "[33mGET /searсh?s=s HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:36:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:36:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:36:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:36:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:36:43] "[33mGET /searсh?s=s HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:36:47] "[33mGET /searсh?s=s HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'page_index' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:37:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'page_index' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:37:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'page_index' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:37:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'page_index' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:37:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'page_index' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:37:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'page_index' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:37:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:38:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:38:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:38:25] "[33mGET /searсh?s=s HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:43:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:43:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:43:47] "[33mGET /searсh?s=s HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:44:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:44:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:44:16] "[33mGET /searсh?s=ага HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:04] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:23] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:46:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:48:06] "GET /search?s=s HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:48:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:48:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:48:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:48:12] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:48:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:48:15] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 22:48:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'loader_blueprint.create_new_post_by_user' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:03:08] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:03:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:03:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:03:15] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:03:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:23:32] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:23:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:23:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:23:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:23:39] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:23:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Данные не загружены, отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:23:46] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:23:50] "GET /post HTTP/1.1" 200 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'loader_blueprint.create_new_post_by_user' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:23:51] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:24:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:24:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:41:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:41:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:41:26] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:41:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:41:27] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:41:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Данные не загружены, отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:41:33] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:41:36] "GET /post HTTP/1.1" 200 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 22, in create_new_post_by_user
+    picture.save(UPLOAD_FOLDER)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\datastructures.py", line 2999, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'uploads/images'
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:41:38] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 22, in create_new_post_by_user
+    picture.save(UPLOAD_FOLDER)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\datastructures.py", line 2999, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'uploads/images'
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:47:23] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:53:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:53:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:53:36] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:53:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:53:38] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:53:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:53:44] "POST /post HTTP/1.1" 200 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:53:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:53:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:55:33] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2022 23:55:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 28, in create_new_post_by_user
+    posts.append(new_post)
+AttributeError: module 'posts' has no attribute 'append'
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:19:05] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:19:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:19:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:19:12] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:19:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 28, in create_new_post_by_user
+    posts.append(new_post)
+AttributeError: module 'posts' has no attribute 'append'
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:19:23] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:10] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 28, in create_new_post_by_user
+    posts.append(new_post)
+AttributeError: module 'posts' has no attribute 'append'
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:15] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:21] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 28, in create_new_post_by_user
+    posts.append(new_post)
+AttributeError: module 'posts' has no attribute 'append'
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:21:29] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:22:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:22:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:22:20] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:22:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 28, in create_new_post_by_user
+    posts.append(new_post)
+AttributeError: module 'posts' has no attribute 'append'
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:22:30] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:22:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:22:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:24:33] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:24:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 27, in create_new_post_by_user
+    posts.append(new_post)
+NameError: name 'posts' is not defined
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:24:39] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:24:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:24:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:26:37] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:26:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:26:48] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:26:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:26:54] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:26:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:26:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:26:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:01] "GET /search?s=i HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:01] "GET /uploads/images/IMG_20210615_143833%20(1).jpg HTTP/1.1" 200 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:40] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:55] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:27:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:28:00] "GET /search?s=новый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:28:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:28:00] "GET /uploads/images/группы%20тэгов.png HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:54:09] "GET /search?s=новый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:54:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:54:09] "[36mGET /uploads/images/группы%20тэгов.png HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:54:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:54:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:54:12] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:54:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:55:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:55:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:55:18] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:55:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:55:21] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 00:55:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:06:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:06:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:06:55] "GET /search?s=иногда HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:06:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:06:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:06:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:07:03] "GET /search?s=всегда HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:07:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:07:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:07:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:07:17] "GET /search?s=s HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:07:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:07:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:07:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:24] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:27] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 28, in create_new_post_by_user
+    new_post = {"pic": picture_path, "content": content}
+NameError: name 'picture_path' is not defined
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:44] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:20:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:29:46] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:29:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:29:51] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:29:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 26, in create_new_post_by_user
+    save_picture(picture)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\utils.py", line 8, in save_picture
+    raise
+RuntimeError: No active exception to reraise
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:30:00] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:30:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:30:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:48:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:48:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:49:00] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:49:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:49:02] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:49:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 27, in create_new_post_by_user
+    add_post(posts, new_post)
+TypeError: add_post() takes 1 positional argument but 2 were given
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:49:08] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 27, in create_new_post_by_user
+    add_post(posts, new_post)
+TypeError: add_post() takes 1 positional argument but 2 were given
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:49:17] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:49:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:49:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:50:21] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:50:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:50:33] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:50:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 27, in create_new_post_by_user
+    add_post(posts, new_post)
+TypeError: add_post() takes 1 positional argument but 2 were given
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:50:40] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:50:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:50:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:57:39] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:57:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 26, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\utils.py", line 9, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {'. '.join(allowed_type)}!")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg. png. gif. jpeg!
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:57:51] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 26, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\utils.py", line 9, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {'. '.join(allowed_type)}!")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg. png. gif. jpeg!
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:58:51] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:59:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:59:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:59:10] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:59:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 26, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\utils.py", line 9, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {'. '.join(allowed_type)}!")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg. png. gif. jpeg!
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 01:59:16] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:00:00] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:00:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 26, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\utils.py", line 9, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {'. '.join(allowed_type)}!")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg. png. gif. jpeg!
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:00:06] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:04:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:04:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:04:50] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:04:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:04:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:04:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:04:54] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:04:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:05:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:05:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:05:01] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:05:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 27, in create_new_post_by_user
+    add_post(posts, new_post)
+TypeError: add_post() takes 1 positional argument but 2 were given
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:05:07] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:22] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:30] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:49] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\views.py", line 26, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\1\PycharmProjects\12HW\12hw\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {'. '.join(allowed_type)}!")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg. png. gif. jpeg!
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:07:54] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:16] "GET /search?s=очень HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:23] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:35] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:11:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:16:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:16:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:16:43] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:16:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:16:49] "POST /post HTTP/1.1" 200 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:17:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2022 02:17:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
